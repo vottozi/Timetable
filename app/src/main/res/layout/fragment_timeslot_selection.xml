@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.adminpanel.TimeSlotSelectionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowback36"
+            android:background="?android:selectableItemBackground"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Выберите занятие"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_marginEnd="42dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/firstSlotButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:elevation="5dp"
+                android:background="@drawable/proceedbutonshape"
+                android:text="Первая пара: 8:00 - 9:20"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/secondSlotButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:elevation="5dp"
+                android:background="@drawable/proceedbutonshape"
+                android:text="Вторая пара: 9:30 - 10:50"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/thirdSlotButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:elevation="5dp"
+                android:background="@drawable/proceedbutonshape"
+                android:text="Третья пара: 11:00 - 12:20"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/fourthSlotButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:elevation="5dp"
+                android:background="@drawable/proceedbutonshape"
+                android:text="Четвертая пара: 12:30 - 13:50"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/fifthSlotButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:elevation="5dp"
+                android:background="@drawable/proceedbutonshape"
+                android:text="Пятая пара: 14:00 - 15:20"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sixthSlotButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:elevation="5dp"
+                android:background="@drawable/proceedbutonshape"
+                android:text="Шестая пара: 15:30 - 16:50"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/seventhSlotButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:elevation="5dp"
+                android:background="@drawable/proceedbutonshape"
+                android:text="Седьмая пара: 17:00 - 18:20"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/eighthSlotButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:elevation="5dp"
+                android:background="@drawable/proceedbutonshape"
+                android:text="Восьмая пара: 18:30 - 19:50"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ninthSlotButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:elevation="5dp"
+                android:background="@drawable/proceedbutonshape"
+                android:text="Девятая пара: 20:00 - 21:20"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

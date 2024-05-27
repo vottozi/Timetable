@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.timetable.ui.StartFragment"
+        android:label="Start"
+        tools:layout="@layout/fragment_start" />
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.timetable.ui.schedule.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.timetable.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.example.timetable.ui.adminpanel.AdminFragment"
+        android:label="Admin выбор недели"
+        tools:layout="@layout/fragment_admin">
+        <action
+            android:id="@+id/action_adminFragment_to_daySelectionFragment"
+            app:destination="@+id/daySelectionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/daySelectionFragment"
+        android:name="com.example.timetable.ui.adminpanel.DaySelectionFragment"
+        android:label="Выбор дня"
+        tools:layout="@layout/fragment_day_selection">
+        <argument
+            android:name="weekNumber"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_daySelectionFragment_to_timeSlotSelectionFragment"
+            app:destination="@id/timeSlotSelectionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/timeSlotSelectionFragment"
+        android:name="com.example.timetable.ui.adminpanel.TimeSlotSelectionFragment"
+        android:label="Выбор пары"
+        tools:layout="@layout/fragment_timeslot_selection">
+        <argument
+            android:name="weekNumber"
+            app:argType="integer" />
+        <argument
+            android:name="dayOfWeek"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_timeSlotSelectionFragment_to_editTimeSlotFragment"
+            app:destination="@id/editTimeSlotFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editTimeSlotFragment"
+        android:name="com.example.timetable.ui.adminpanel.EditTimeSlotFragment"
+        android:label="Редактирование пары"
+        tools:layout="@layout/fragment_edit_timeslot">
+        <argument
+            android:name="weekNumber"
+            app:argType="integer" />
+        <argument
+            android:name="dayOfWeek"
+            app:argType="string" />
+        <argument
+            android:name="timeSlot"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

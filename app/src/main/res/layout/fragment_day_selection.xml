@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.adminpanel.DaySelectionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowback36"
+            android:background="?android:selectableItemBackground"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Выберите день"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:layout_marginEnd="42dp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mondayButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="5dp"
+        android:background="@drawable/proceedbutonshape"
+        android:text="Понедельник"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tuesdayButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="5dp"
+        android:background="@drawable/proceedbutonshape"
+        android:text="Вторник"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/wednesdayButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="5dp"
+        android:background="@drawable/proceedbutonshape"
+        android:text="Среда"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/thursdayButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="5dp"
+        android:background="@drawable/proceedbutonshape"
+        android:text="Четверг"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fridayButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="5dp"
+        android:background="@drawable/proceedbutonshape"
+        android:text="Пятница"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saturdayButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="5dp"
+        android:background="@drawable/proceedbutonshape"
+        android:text="Суббота"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp" />
+
+
+</LinearLayout>
